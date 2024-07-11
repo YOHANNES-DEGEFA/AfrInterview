@@ -1,0 +1,28 @@
+.appHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 20px;
+    color: #282c34;
+    background: #ffffff;
+    border-bottom: 1px solid rgba(5, 5, 5, 0.06);
+    /* transform: translateX(50%); */
+}
+
+.logo {
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(0.9);
+}
+
+.logo h3 {
+    font-size: 54px;
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Playwrite HR Lijeva', cursive, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}

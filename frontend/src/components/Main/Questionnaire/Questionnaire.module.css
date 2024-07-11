@@ -1,0 +1,56 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.innerWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.questionWrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.title {
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Playwrite FR Trad', cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+.text {
+    margin: 0;
+    font-family: 'Playwrite FR Trad', cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+.playQuestionButton {
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+.btnWrapper {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.changeAnswerButton,
+.answerInput {
+    margin-top: 20px;
+}
