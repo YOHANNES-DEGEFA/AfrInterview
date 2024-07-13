@@ -16,6 +16,7 @@ import { APP_NAV } from "./utils/constants";
 import Results from "./pages/Results";
 import { useLocalCameraStream } from "./hooks/useLocalCamera";
 import { VideoChatRoom } from "./components/UI/VideoChatRoom";
+import WebRTCDemo from "./pages/WebRtc";
 
 function App() {
   const jobQuestions = useAppSelector(selectJobQuestions);
@@ -28,6 +29,7 @@ function App() {
       <main className="container">
         <Routes>
           <Route path={APP_NAV.home} element={<Home />} />
+          <Route path="/webrtc" element={<WebRTCDemo />} />
           <Route
             path="video-chat-room/:roomName"
             element={localStream && <VideoChatRoom localStream={localStream} />}
