@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "@nestjs/config": "^3.2.3",
-    "@nestjs/platform-socket.io": "^10.3.10",
-    "@nestjs/websockets": "^10.3.10",
-    "joi": "^17.13.3"
-  }
-}
