@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 import AppToolbar from "./components/UI/AppToolbar";
 import { Route, Routes } from "react-router-dom";
@@ -17,6 +16,8 @@ import Results from "./pages/Results";
 import { useLocalCameraStream } from "./hooks/useLocalCamera";
 import { VideoChatRoom } from "./components/UI/VideoChatRoom";
 import WebRTCDemo from "./pages/WebRtc";
+import NavBar from "./components/UI/Navigation";
+import Welcome from "./pages/Welcome";
 
 function App() {
   const jobQuestions = useAppSelector(selectJobQuestions);
@@ -25,11 +26,13 @@ function App() {
   const { localStream } = useLocalCameraStream();
   return (
     <>
-      <AppToolbar />
+      {/* <AppToolbar /> */}
+      <NavBar />
       <main className="container">
         <Routes>
-          <Route path={APP_NAV.home} element={<Home />} />
+          <Route path={APP_NAV.home} element={<Welcome />} />
           <Route path="/webrtc" element={<WebRTCDemo />} />
+          <Route path="/home" element={<Home />} />
           <Route
             path="video-chat-room/:roomName"
             element={localStream && <VideoChatRoom localStream={localStream} />}

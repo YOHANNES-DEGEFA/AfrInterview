@@ -150,7 +150,26 @@ const WebRTCDemo: React.FC = () => {
 
   return (
     <div>
-      <h2>1. Start your Webcam</h2>
+      <div className="controllers">
+        {/* <h2>1. Start your Webcam</h2> */}
+        <button onClick={startWebcam}>Start webcam</button>
+
+        {/* <h2>2. Create a new Call</h2> */}
+        <button onClick={createCall} disabled={callButtonDisabled}>
+          Create Call (offer)
+        </button>
+
+        {/* <h2>3. Join a Call</h2> */}
+        {/* <p>Answer the call from a different browser window or device</p> */}
+        <span>
+          <input ref={callInputRef} placeholder="Join a Call" />
+          <button onClick={answerCall} disabled={answerButtonDisabled}>
+            Answer
+          </button>
+        </span>
+
+        <button disabled={hangupButtonDisabled}>Hangup</button>
+      </div>
       <div className="videos">
         <span>
           <h3>Local Stream</h3>
@@ -161,24 +180,6 @@ const WebRTCDemo: React.FC = () => {
           <video ref={remoteVideoRef} autoPlay playsInline></video>
         </span>
       </div>
-
-      <button onClick={startWebcam}>Start webcam</button>
-
-      <h2>2. Create a new Call</h2>
-      <button onClick={createCall} disabled={callButtonDisabled}>
-        Create Call (offer)
-      </button>
-
-      <h2>3. Join a Call</h2>
-      <p>Answer the call from a different browser window or device</p>
-
-      <input ref={callInputRef} />
-      <button onClick={answerCall} disabled={answerButtonDisabled}>
-        Answer
-      </button>
-
-      <h2>4. Hangup</h2>
-      <button disabled={hangupButtonDisabled}>Hangup</button>
     </div>
   );
 };

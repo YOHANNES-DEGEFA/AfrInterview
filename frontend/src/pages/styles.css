@@ -6,7 +6,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin: 80px 10px;
+  /* margin: 80px 10px; */
 }
 
 video {
@@ -20,4 +20,28 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.controllers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.controllers button,
+input {
+  font-family: "Syne Mono";
+  padding: 10px 30px;
+}
+
+.controllers button {
+  border-radius: 10px;
+  color: #2c3e50;
+}
+.controllers input {
+  border-radius: 5px;
+  padding: 14px 30px;
+}
+.controllers span {
+  display: flex;
+  gap: 10px;
 }
