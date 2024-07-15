@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import JobList from "../components/Main/JobList/JobList";
-import { Button, Typography } from "antd";
+import { Typography } from "antd";
 import "./home.css";
 
 const Home = () => {

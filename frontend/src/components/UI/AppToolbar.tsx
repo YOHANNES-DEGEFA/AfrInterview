@@ -1,4 +1,3 @@
-import React from "react";
 import { Layout, Typography } from "antd";
 import styles from "./AppToolbar.module.css";
 

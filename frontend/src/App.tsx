@@ -1,5 +1,4 @@
 import "./App.css";
-import AppToolbar from "./components/UI/AppToolbar";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Interview from "./pages/Interview";
