@@ -1,23 +1,11 @@
 {
+  "name": "my-project",
   "version": 2,
   "builds": [
     {
-      "src": "frontend/package.json",
+      "src": "frontend",
       "use": "@vercel/static-build",
-      "config": {
-        "distDir": "frontend/dist"
-      }
-    }
-  ],
-  "routes": [
-    { "handle": "filesystem" },
-    {
-      "src": "/frontend/(.*)",
-      "dest": "/frontend/dist/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/frontend/dist/index.html"
+      "config": { "distDir": "dist" }
     }
   ]
 }
