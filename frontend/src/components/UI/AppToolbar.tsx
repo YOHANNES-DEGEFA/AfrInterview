@@ -2,7 +2,7 @@ import { Layout, Typography } from "antd";
 import styles from "./AppToolbar.module.css";
 
 const { Header } = Layout;
-
+//updated the UI
 const AppToolbar = () => {
   return (
     <Header className={styles.appHeader}>
